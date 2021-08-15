@@ -4,12 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./style.css" />
   <title>My Portfolio with Tailwind CSS</title>
 </head>
-<body>
-  <div class="text-center bg-blue-500 text-white text-4xl">
-    <h1>Hello World!</h1>
-  </div>
+<body class="font-poppins bg-red-50">
+  <header>
+    <nav
+      class="container mx-auto px-4
+        flex items-center justify-between py-6
+      "
+    >
+      <a href="/" class="text-2xl font-bold cursor-pointer hover:text-main transition duration-300">
+        Marsi.
+      </a>
+      <div>
+        <div class="inline-block cursor-pointer group">
+          <span class="block h-0.5 bg-black group-hover:bg-main w-7"></span>
+          <span class="block my-1 h-0.5 bg-black group-hover:bg-main w-5 ml-auto"></span>
+          <span class="block h-0.5 bg-black group-hover:bg-main w-7"></span>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="container mx-auto px-4
+        pt-8 flex items-center justify-between
+        flex-col md:flex-row
+      "
+    >
+      <div class="text-4xl font-bold order-2 md:order-1 text-center md:text-left">
+        <span>
+          Hello I'm
+        </span>
+        <h1 class="my-2">
+          Marlon Simon
+        </h1>
+        <span class="text-main">
+          UX-UI Designer
+        </span>
+      </div>
+      <div class="order-1 md:order-1">
+        <img src="./images/boy.png" alt="Marlon Simon">
+      </div>
+    </section>
+  </header>
+  <section class="container mx-auto px-4 pt-8">
+    <div
+      class="bg-black bg-opacity-10 rounded py-8 px-12
+        flex flex-col md:flex-row gap-12 items-center
+        justify-between
+      "
+    >
+      <div class="w-full md:w-2/5 text-center">
+        <h2 class="font-bold text-2xl mb-2">Newsletter</h2>
+        <p class="opacity-40">
+          Mauris aliquet egestas metus, 
+          id pellentesque mauris tincidunt.
+        </p>
+      </div>
+      <div
+        class="w-full md:w-3/5 bg-white flex item-center justify-between
+          p-8 rounded flex-col md:flex-row
+        "
+      >
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="w-full md:w-7/12 focus:outline-none"
+        >
+        <span class="cursor-pointer">Subscribe now >></span>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>
